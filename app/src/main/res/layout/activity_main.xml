@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/clear"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="AC" />
+
+            <ImageView
+                android:id="@+id/backspace"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:scaleType="center"
+                android:src="@drawable/backspace" />
+
+            <TextView
+                android:id="@+id/openbracket"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/closebracket"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text=")" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/sin"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="sin" />
+
+            <TextView
+                android:id="@+id/cos"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="cos" />
+
+            <TextView
+                android:id="@+id/tan"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="tan" />
+
+            <TextView
+                android:id="@+id/log"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="log" />
+
+            <TextView
+                android:id="@+id/modulo"
+                style="@style/Operators"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="%" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/factorial"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="x!" />
+
+            <TextView
+                android:id="@+id/sqr"
+                style="@style/ScientificOps"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="x²" />
+
+            <TextView
+                android:id="@+id/sqrRoot"
+                style="@style/Number"
+                android:textSize="30sp"
+                android:cursorVisible="true"
+                android:textDirection="rtl"
+
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="√" />
+
+            <TextView
+                android:id="@+id/power"
+                style="@style/Number"
+                android:textSize="40sp"
+                android:textDirection="ltr"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="^" />
+
+            <TextView
+                android:id="@+id/divide"
+                style="@style/Operators"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="8" />
+
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/Operators"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="*" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="5" />
+
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/Operators"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="-" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="2" />
+
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/Operators"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="+" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/changeSign"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="+/-" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="0" />
+
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/Operators"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="=" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="239dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        style="@style/Operators"
+        app:layout_constraintBottom_toTopOf="@+id/tablelayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="194dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="32dp"
+        style="@style/Number"
+        app:layout_constraintBottom_toTopOf="@+id/tablelayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expression"
+        app:layout_constraintVertical_bias="0.858" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
